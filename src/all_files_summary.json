@@ -1,0 +1,23 @@
+{
+  "backend/main.mo": "Main actor defining FoodItem type with imageUrl field, Map-based storage, and public functions for adding, retrieving, filtering food items by country/type, and seeding authentic international recipes.",
+  "backend/migration.mo": "Migration module that transforms old FoodItem records (without imageUrl) to new FoodItem records (with optional imageUrl field set to null).",
+  "feature_evidence.json": "Feature evidence report documenting three features: displaying food photos in FoodCard, adding imageUrl field to UploadRecipeForm, and rendering generated food photos as static assets.",
+  "frontend-file-summaries.txt": "JSON-formatted summaries of all frontend source files including components, hooks, styles, and configuration with descriptions of their functionality.",
+  "frontend/index.css": "Global Tailwind CSS styles defining OKLCH-based warm earth tone color system with custom CSS variables for light and dark modes.",
+  "frontend/index.html": "HTML entry point with root div and module script reference to main.tsx for the Global Recipe application.",
+  "frontend/src/App.tsx": "Root React component rendering Layout wrapper with FoodCatalog and Toaster components.",
+  "frontend/src/components/CategoryIcons.tsx": "Utility module mapping FoodType enum values to category icon image paths in the generated assets directory.",
+  "frontend/src/components/FilterControls.tsx": "Filter UI component with country and food type dropdowns, clear filters button, styled with warm earth tones.",
+  "frontend/src/components/FoodCard.tsx": "Card component displaying food items with optional 4:3 aspect ratio image above name, country/type badges, category icon, description, and view recipe button.",
+  "frontend/src/components/FoodCatalog.tsx": "Main catalog view managing filter state, fetching food items based on active filters, and conditionally rendering food card grid or recipe detail view.",
+  "frontend/src/components/Layout.tsx": "Main layout component with hero banner, header with logo and action buttons (Load Recipes, Add Recipe), and footer. Manages dialog state for the UploadRecipeForm and triggers seed data mutation.",
+  "frontend/src/components/RecipeView.tsx": "Displays detailed view of a single recipe including name, country, food type, description, category icon, and numbered recipe steps. Includes a back button to return to catalog.",
+  "frontend/src/components/UploadRecipeForm.tsx": "Form component for adding new recipes with fields for name, image URL, country, food type, description, and dynamic recipe steps. Validates input and uses mutation hook to submit data.",
+  "frontend/src/hooks/useActor.ts": "Custom hook that creates and manages the backend actor instance based on Internet Identity authentication state. Invalidates and refetches dependent queries when actor changes.",
+  "frontend/src/hooks/useInternetIdentity.ts": "Provides Internet Identity authentication context and hooks for login/logout functionality. Creates AuthClient with configurable options and manages identity state throughout the application.",
+  "frontend/src/hooks/useQueries.ts": "Defines React Query hooks for backend operations: listing all food items, filtering by country/food type, adding food items, and seeding real data. Includes toast notifications for success/error states.",
+  "frontend/src/index.css": "Tailwind CSS configuration with custom warm earth-tone color palette (terracotta, sage, cream) for both light and dark modes. Defines CSS variables for theming and sets font families.",
+  "frontend/src/main.tsx": "Application entry point that sets up React root with QueryClientProvider for React Query and InternetIdentityProvider for authentication context, then renders the App component.",
+  "frontend/tailwind.config.js": "Tailwind CSS configuration file defining custom color scheme using OKLCH color space with warm earth tones (terracotta, sage, cream), extended theme settings for borders, shadows, animations, and plugins for typography, container queries, and animations.",
+  "project_state.json": "Project state tracking file documenting a recipe app with international food catalog, featuring country/type filtering, step-by-step recipe views, user upload functionality, and warm earth-tone UI design with food photo display capabilities."
+}

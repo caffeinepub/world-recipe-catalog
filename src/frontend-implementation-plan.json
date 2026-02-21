@@ -1,0 +1,56 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Add food photos to catalog cards",
+  "requirements": [
+    {
+      "id": "REQ-12",
+      "summary": "Display food photos on catalog cards above the food name when imageUrl is available",
+      "acceptanceCriteria": [
+        "Food photo is displayed prominently on each card when available",
+        "Photo has proper aspect ratio and responsive sizing",
+        "Fallback UI is shown if imageUrl is not provided",
+        "Photo styling integrates seamlessly with the existing card design"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/FoodCard.tsx",
+          "operation": "modify",
+          "description": "Add an img element above the food name to display the food photo when imageUrl is provided. Use the imageUrl from the FoodItem prop to render the image with appropriate styling that matches the warm earth tone design (rounded corners, proper spacing, responsive sizing with aspect-ratio handling). Include a fallback UI (gradient background or placeholder) when imageUrl is not available. Ensure the photo integrates seamlessly with the existing card layout including the category icon, badges, and description."
+        }
+      ]
+    },
+    {
+      "id": "REQ-13",
+      "summary": "Add optional image URL input field to the recipe upload form",
+      "acceptanceCriteria": [
+        "Image URL input field is added to the form",
+        "Field is clearly labeled and optional",
+        "Form submission includes imageUrl value when provided"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/UploadRecipeForm.tsx",
+          "operation": "modify",
+          "description": "Add an optional imageUrl text input field to the form after the name field and before the country dropdown. Label it clearly as 'Image URL (optional)' with placeholder text suggesting the expected format. Update the form state to include the imageUrl field and ensure it is passed to the addFoodItemMutation when the form is submitted. The field should accept text input and be styled consistently with the existing form inputs using the warm earth tone palette."
+        }
+      ]
+    },
+    {
+      "id": "REQ-14",
+      "summary": "Wire generated food photos as static frontend assets and reference them correctly in FoodCard",
+      "acceptanceCriteria": [
+        "Generated images are properly referenced in FoodCard",
+        "Images load correctly from the static assets directory",
+        "No backend routing is used for serving generated images"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/FoodCard.tsx",
+          "operation": "modify",
+          "description": "Ensure the img element added in REQ-12 references the imageUrl prop directly using src={item.imageUrl}. The generated image files will be located at frontend/public/assets/generated/churros.dim_400x300.png, frontend/public/assets/generated/mochi-ice-cream.dim_400x300.png, frontend/public/assets/generated/timbits.dim_400x300.png, frontend/public/assets/generated/pastel-de-nata.dim_400x300.png, and frontend/public/assets/generated/bubble-tea.dim_400x300.png. These paths should be stored in the backend as /assets/generated/[filename] format and will be served as static assets by the frontend build system."
+        }
+      ]
+    }
+  ]
+}

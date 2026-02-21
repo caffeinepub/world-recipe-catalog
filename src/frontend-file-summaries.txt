@@ -1,0 +1,13 @@
+{
+  "frontend/src/App.tsx": "Main application component that renders the Layout wrapper with FoodCatalog and Toaster for notifications.",
+  "frontend/src/hooks/useQueries.ts": "React Query hooks for all backend operations including listing, filtering, adding food items (with imageUrl support), and seeding real recipe data with proper cache invalidation.",
+  "frontend/src/components/Layout.tsx": "Application layout component with hero banner, header with app title and action buttons (including \"Load Recipes\" button that seeds authentic international recipes), main content area, and footer with attribution.",
+  "frontend/src/components/FoodCatalog.tsx": "Main catalog view that manages filter state, fetches food items based on active filters, and conditionally renders either the grid of food cards or the recipe detail view.",
+  "frontend/src/components/FoodCard.tsx": "Reusable card component displaying individual food items with an optional food photo (4:3 aspect ratio) above the name, along with country/type badges, category icon, description, and a button to view the full recipe.",
+  "frontend/src/components/FilterControls.tsx": "Filter UI with dropdown selectors for country and food type, plus a clear filters button, styled with warm earth tones.",
+  "frontend/src/components/RecipeView.tsx": "Detailed recipe view showing food name, description, badges, category icon, and numbered step-by-step cooking instructions with a back button.",
+  "frontend/src/components/UploadRecipeForm.tsx": "Form component for adding new recipes with fields for name, optional image URL, country, food type, description, and dynamic recipe steps with validation and loading states.",
+  "frontend/src/components/CategoryIcons.tsx": "Utility module that maps FoodType enum values to their corresponding category icon image paths.",
+  "frontend/src/index.css": "Global styles with OKLCH-based warm earth tone color system (terracotta, sage green, cream) for both light and dark modes, plus custom font families.",
+  "frontend/tailwind.config.js": "Tailwind configuration extended with custom warm earth tone colors (terracotta, sage, cream), custom fonts (Inter, Playfair Display), and design tokens."
+}

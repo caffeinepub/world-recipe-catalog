@@ -1,0 +1,59 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-modify-the-foodcard-component-in-frontend-src-components-foodcard-tsx-to-display-the-food-photo-above-the-food-name-when-imageurl-is-available-using-an-img-element-with-appropriate-styling-that-matches-the-warm-earth-tone-design",
+      "featureTitle": "Modify the FoodCard component in frontend/src/components/FoodCard.tsx to display the food photo above the food name when imageUrl is available, using an img element with appropriate styling that matches the warm earth tone design",
+      "files": [
+        "frontend/src/components/FoodCard.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-12"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-add-an-imageurl-field-to-the-uploadrecipeform-component-in-frontend-src-components-uploadrecipeform-tsx-allowing-users-to-optionally-provide-an-image-url-when-submitting-new-recipes",
+      "featureTitle": "Add an imageUrl field to the UploadRecipeForm component in frontend/src/components/UploadRecipeForm.tsx, allowing users to optionally provide an image URL when submitting new recipes",
+      "files": [
+        "frontend/src/components/UploadRecipeForm.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-13"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-render-the-generated-food-photos-as-static-assets-in-frontend-public-assets-generated-directory-and-reference-them-in-the-foodcard-component-using-relative-paths",
+      "featureTitle": "Render the generated food photos as static assets in frontend/public/assets/generated/ directory and reference them in the FoodCard component using relative paths",
+      "files": [
+        "frontend/src/components/FoodCard.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-14"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

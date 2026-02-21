@@ -1,0 +1,100 @@
+{
+  "kind": "build_request",
+  "title": "Add food photos to catalog cards",
+  "projectName": "Global Recipe",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-11",
+      "text": "Update the FoodItem type in backend/main.mo to include an optional imageUrl field of type ?Text to store the URL or path to the food photo",
+      "target": "backend",
+      "source": {
+        "messageIds": [
+          "msg-user-latest"
+        ],
+        "quotes": [
+          "Can you add one photo of the food along with its name"
+        ]
+      },
+      "acceptanceCriteria": [
+        "FoodItem type includes imageUrl field",
+        "Existing seedRealData function populates imageUrl for all food items with appropriate image paths",
+        "Image paths follow the pattern frontend/public/assets/generated/[food-name].png"
+      ]
+    },
+    {
+      "id": "REQ-12",
+      "text": "Modify the FoodCard component in frontend/src/components/FoodCard.tsx to display the food photo above the food name when imageUrl is available, using an img element with appropriate styling that matches the warm earth tone design",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-user-latest"
+        ],
+        "quotes": [
+          "Can you add one photo of the food along with its name"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Food photo is displayed prominently on each card when available",
+        "Photo has proper aspect ratio and responsive sizing",
+        "Fallback UI is shown if imageUrl is not provided",
+        "Photo styling integrates seamlessly with the existing card design"
+      ]
+    },
+    {
+      "id": "REQ-13",
+      "text": "Add an imageUrl field to the UploadRecipeForm component in frontend/src/components/UploadRecipeForm.tsx, allowing users to optionally provide an image URL when submitting new recipes",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-user-latest"
+        ],
+        "quotes": [
+          "Can you add one photo of the food along with its name"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Image URL input field is added to the form",
+        "Field is clearly labeled and optional",
+        "Form submission includes imageUrl value when provided"
+      ]
+    },
+    {
+      "id": "REQ-14",
+      "text": "Render the generated food photos as static assets in frontend/public/assets/generated/ directory and reference them in the FoodCard component using relative paths",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-user-latest"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Generated images are properly referenced in FoodCard",
+        "Images load correctly from the static assets directory",
+        "No backend routing is used for serving generated images"
+      ]
+    }
+  ],
+  "constraints": [
+    "Do not modify frontend/src/hooks/useInternetIdentity.ts, frontend/src/hooks/useActor.ts, frontend/src/main.tsx, or frontend/src/components/ui directory",
+    "Maintain the single-actor architecture in backend/main.mo",
+    "Preserve the existing warm earth tone design palette (terracotta, sage green, cream)",
+    "Keep all Motoko logic in the main actor file"
+  ],
+  "nonGoals": [
+    "Implementing image upload functionality",
+    "Adding image editing or cropping features",
+    "Creating a gallery view for food photos",
+    "Adding photo filters or effects"
+  ],
+  "imageRequirements": {
+    "required": [
+      "Appetizing photo of Spanish churros with chocolate dipping sauce (churros.dim_400x300.png)",
+      "Colorful photo of Japanese mochi ice cream balls in various flavors (mochi-ice-cream.dim_400x300.png)",
+      "Photo of Canadian Timbits donut holes in assorted flavors (timbits.dim_400x300.png)",
+      "Golden Portuguese pastel de nata custard tarts (pastel-de-nata.dim_400x300.png)",
+      "Photo of bubble tea with tapioca pearls and straw (bubble-tea.dim_400x300.png)"
+    ],
+    "edits": []
+  }
+}

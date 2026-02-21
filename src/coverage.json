@@ -1,0 +1,79 @@
+{
+  "kind": "coverage_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-21T08:21:04.061Z",
+  "sources": {
+    "buildRequest": true,
+    "implementationPlan": true
+  },
+  "requirements": {
+    "total": 4,
+    "implemented": 3,
+    "items": [
+      {
+        "id": "REQ-11",
+        "summary": "Update the FoodItem type in backend/main.mo to include an optional imageUrl field of type ?Text to store the URL or path to the food photo",
+        "status": "unknown",
+        "plannedFiles": [],
+        "matchedFiles": []
+      },
+      {
+        "id": "REQ-12",
+        "summary": "Modify the FoodCard component in frontend/src/components/FoodCard.tsx to display the food photo above the food name when imageUrl is available, using an img element with appropriate styling that matches the warm earth tone design",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/FoodCard.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/FoodCard.tsx"
+        ]
+      },
+      {
+        "id": "REQ-13",
+        "summary": "Add an imageUrl field to the UploadRecipeForm component in frontend/src/components/UploadRecipeForm.tsx, allowing users to optionally provide an image URL when submitting new recipes",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/UploadRecipeForm.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/UploadRecipeForm.tsx"
+        ]
+      },
+      {
+        "id": "REQ-14",
+        "summary": "Render the generated food photos as static assets in frontend/public/assets/generated/ directory and reference them in the FoodCard component using relative paths",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/FoodCard.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/FoodCard.tsx"
+        ]
+      }
+    ]
+  },
+  "changedFiles": [
+    "backend/main.mo",
+    "backend/migration.mo",
+    "build-request.json",
+    "feature_evidence.json",
+    "frontend-file-summaries.txt",
+    "frontend-implementation-plan.json",
+    "frontend/public/assets/generated/bubble-tea.dim_400x300.png",
+    "frontend/public/assets/generated/churros.dim_400x300.png",
+    "frontend/public/assets/generated/mochi-ice-cream.dim_400x300.png",
+    "frontend/public/assets/generated/pastel-de-nata.dim_400x300.png",
+    "frontend/public/assets/generated/timbits.dim_400x300.png",
+    "frontend/src/backend.d.ts",
+    "frontend/src/backend.ts",
+    "frontend/src/components/FoodCard.tsx",
+    "frontend/src/components/UploadRecipeForm.tsx",
+    "frontend/src/declarations/backend.did.d.ts",
+    "frontend/src/declarations/backend.did.js",
+    "frontend/src/hooks/useQueries.ts",
+    "project_state.json",
+    "scratch/component-selection.json",
+    "spec.md",
+    "spec_vs_diff_report.json"
+  ]
+}

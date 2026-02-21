@@ -1,0 +1,146 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 7,
+  "summary": "Recipe app with international food catalog, categorized by country and food types, displaying recipes with step-by-step instructions and user upload functionality",
+  "architectural_notes": [
+    "Recipe data structured by country and food type categories",
+    "Step-by-step recipe view component",
+    "User-generated content upload system",
+    "Food items include image URLs for displaying photos"
+  ],
+  "known_issues": [],
+  "isFixRequest": false,
+  "imageRequirements": "## Required Images\n- Appetizing photo of Spanish churros with chocolate dipping sauce (churros.dim_400x300.png)\n- Colorful photo of Japanese mochi ice cream balls in various flavors (mochi-ice-cream.dim_400x300.png)\n- Photo of Canadian Timbits donut holes in assorted flavors (timbits.dim_400x300.png)\n- Golden Portuguese pastel de nata custard tarts (pastel-de-nata.dim_400x300.png)\n- Photo of bubble tea with tapioca pearls and straw (bubble-tea.dim_400x300.png)",
+  "existing_features": [
+    {
+      "id": "feature-build-a-food-catalog-page-displaying-all-food-items-as-cards-with-name-country-tag-food-type-tag-and-a-recipe-button",
+      "title": "Build a food catalog page displaying all food items as cards with name, country tag, food type tag, and a Recipe button",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-filtering-controls-to-allow-users-to-filter-food-items-by-country-and-food-type",
+      "title": "Implement filtering controls to allow users to filter food items by country and food type",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-recipe-view-that-displays-step-by-step-instructions-when-the-recipe-button-is-pressed",
+      "title": "Create a recipe view that displays step-by-step instructions when the Recipe button is pressed",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-a-user-upload-form-allowing-users-to-submit-new-food-recipes-with-all-required-fields",
+      "title": "Build a user upload form allowing users to submit new food recipes with all required fields",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-design-a-professional-ui-with-a-cohesive-color-scheme-using-warm-earth-tones-terracotta-sage-green-cream-with-clear-typography-and-generous-spacing-to-create-an-inviting-culinary-aesthetic",
+      "title": "Design a professional UI with a cohesive color scheme using warm earth tones (terracotta, sage green, cream) with clear typography and generous spacing to create an inviting culinary aesthetic",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-modify-the-foodcard-component-in-frontend-src-components-foodcard-tsx-to-display-the-food-photo-above-the-food-name-when-imageurl-is-available-using-an-img-element-with-appropriate-styling-that-matches-the-warm-earth-tone-design",
+      "title": "Modify the FoodCard component in frontend/src/components/FoodCard.tsx to display the food photo above the food name when imageUrl is available, using an img element with appropriate styling that matches the warm earth tone design",
+      "reqIds": [
+        "REQ-12"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-an-imageurl-field-to-the-uploadrecipeform-component-in-frontend-src-components-uploadrecipeform-tsx-allowing-users-to-optionally-provide-an-image-url-when-submitting-new-recipes",
+      "title": "Add an imageUrl field to the UploadRecipeForm component in frontend/src/components/UploadRecipeForm.tsx, allowing users to optionally provide an image URL when submitting new recipes",
+      "reqIds": [
+        "REQ-13"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-render-the-generated-food-photos-as-static-assets-in-frontend-public-assets-generated-directory-and-reference-them-in-the-foodcard-component-using-relative-paths",
+      "title": "Render the generated food photos as static assets in frontend/public/assets/generated/ directory and reference them in the FoodCard component using relative paths",
+      "reqIds": [
+        "REQ-14"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Food catalog with international items categorized by country",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "Food type classification (sweets, ice cream, snacks, etc.)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "Recipe display with step-by-step instructions",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-4",
+      "summary": "User upload functionality for food recipes",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-5",
+      "summary": "Professional UI/UX design",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-6",
+      "summary": "Populate the backend with a comprehensive collection of real international food recipes covering multiple countries and food types, including authentic dish names, descriptions, and detailed step-by-step cooking instructions",
+      "reqIds": [
+        "REQ-9"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-7",
+      "summary": "Update the seed function in backend/main.mo to include these real recipes instead of placeholder data",
+      "reqIds": [
+        "REQ-10"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-8",
+      "summary": "Display a photo of each food item alongside its name",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-9",
+      "summary": "Update the FoodItem type in backend/main.mo to include an optional imageUrl field of type ?Text to store the URL or path to the food photo",
+      "reqIds": [
+        "REQ-11"
+      ],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "Global Recipe",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

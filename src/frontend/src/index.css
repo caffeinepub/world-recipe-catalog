@@ -1,0 +1,109 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --radius: 0.75rem;
+        
+        /* Warm Earth Tone Palette - Light Mode */
+        --background: 0.97 0.02 45;  /* Cream */
+        --foreground: 0.25 0.03 30;  /* Dark Brown */
+        
+        --card: 1 0 0;  /* White */
+        --card-foreground: 0.25 0.03 30;
+        
+        --popover: 1 0 0;
+        --popover-foreground: 0.25 0.03 30;
+        
+        --primary: 0.58 0.15 25;  /* Terracotta */
+        --primary-foreground: 0.97 0.02 45;  /* Cream */
+        
+        --secondary: 0.65 0.08 140;  /* Sage Green */
+        --secondary-foreground: 0.97 0.02 45;
+        
+        --muted: 0.92 0.01 45;
+        --muted-foreground: 0.50 0.02 30;
+        
+        --accent: 0.75 0.12 80;  /* Warm Gold */
+        --accent-foreground: 0.25 0.03 30;
+        
+        --destructive: 0.55 0.22 20;
+        --destructive-foreground: 0.97 0.02 45;
+        
+        --border: 0.88 0.02 45;
+        --input: 0.88 0.02 45;
+        --ring: 0.58 0.15 25;
+        
+        --chart-1: 0.58 0.15 25;
+        --chart-2: 0.65 0.08 140;
+        --chart-3: 0.75 0.12 80;
+        --chart-4: 0.70 0.10 180;
+        --chart-5: 0.50 0.18 35;
+        
+        /* Custom colors */
+        --terracotta: 0.58 0.15 25;
+        --terracotta-dark: 0.48 0.15 25;
+        --sage: 0.65 0.08 140;
+        --sage-dark: 0.55 0.08 140;
+        --cream: 0.97 0.02 45;
+    }
+
+    .dark {
+        --background: 0.20 0.03 30;  /* Dark Brown */
+        --foreground: 0.97 0.02 45;  /* Cream */
+        
+        --card: 0.25 0.03 30;
+        --card-foreground: 0.97 0.02 45;
+        
+        --popover: 0.25 0.03 30;
+        --popover-foreground: 0.97 0.02 45;
+        
+        --primary: 0.68 0.15 25;  /* Lighter Terracotta */
+        --primary-foreground: 0.20 0.03 30;
+        
+        --secondary: 0.55 0.08 140;  /* Darker Sage */
+        --secondary-foreground: 0.97 0.02 45;
+        
+        --muted: 0.30 0.03 30;
+        --muted-foreground: 0.70 0.02 45;
+        
+        --accent: 0.65 0.12 80;
+        --accent-foreground: 0.97 0.02 45;
+        
+        --destructive: 0.60 0.22 20;
+        --destructive-foreground: 0.97 0.02 45;
+        
+        --border: 0.35 0.03 30;
+        --input: 0.35 0.03 30;
+        --ring: 0.68 0.15 25;
+        
+        --chart-1: 0.68 0.15 25;
+        --chart-2: 0.55 0.08 140;
+        --chart-3: 0.65 0.12 80;
+        --chart-4: 0.60 0.10 180;
+        --chart-5: 0.55 0.18 35;
+        
+        /* Custom colors for dark mode */
+        --terracotta: 0.68 0.15 25;
+        --terracotta-dark: 0.58 0.15 25;
+        --sage: 0.55 0.08 140;
+        --sage-dark: 0.45 0.08 140;
+        --cream: 0.97 0.02 45;
+    }
+
+    * {
+        @apply border-border;
+    }
+    
+    body {
+        @apply bg-background text-foreground;
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+        line-height: 1.6;
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+        font-family: 'Playfair Display', Georgia, serif;
+        line-height: 1.3;
+    }
+}
